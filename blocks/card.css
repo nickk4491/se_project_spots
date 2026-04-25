@@ -18,6 +18,11 @@
   opacity: 0.4;
 }
 
+.card__like-button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
 .card__content {
   display: flex;
   align-items: center;
@@ -31,12 +36,16 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  font-style: medium;
   color: #212121;
 }
 
-@media screen and(max-width: 627px) {
+@media screen and (max-width: 627px) {
+  .card {
+    width: 288px;
+  }
+
   .card__image {
     height: 288px;
+    width: 288px;
   }
 }

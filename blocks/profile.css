@@ -54,6 +54,12 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  opacity: 0.7;
+}
+
+.profile__edit-btn:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 .profile__add-btn {
@@ -67,6 +73,11 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+}
+
+.profile__add-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {
@@ -92,7 +103,7 @@
   }
   .profile__name {
     font-size: 20px;
-    margin: 0 0 6x;
+    margin: 0 0 6px;
     min-width: 288px;
   }
   .profile__column {

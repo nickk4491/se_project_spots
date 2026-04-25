@@ -2,6 +2,8 @@
 
 ## Description
 
+-This project is a website made with a responsive design where the elements will fit nicely regardless of the screen size someone is viewing it on.
+
 ## Tech stack
 
 -HTML
@@ -11,6 +13,7 @@
 ## Deployment
 
 -This webpage is deployed to Github Pages
+https://nickk4491.github.io/se_project_spots/
 
 ### Overview
 
