@@ -10,6 +10,10 @@
 -CSS
 -Responsive design
 
+## Loom Video
+https://www.loom.com/share/e8b74b4f9cd8433fa2ad6ebbd96dfef6
+-I was really nervous and it was weird talking to myself in a video. I will definitely work to improve that. Please let me move forward though im stuck and cant go forward in sprint 4. 
+
 ## Deployment
 
 -This webpage is deployed to Github Pages
