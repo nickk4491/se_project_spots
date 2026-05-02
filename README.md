@@ -11,7 +11,7 @@
 -Responsive design
 
 ## Loom Video
-https://www.loom.com/share/e8b74b4f9cd8433fa2ad6ebbd96dfef6
+https://drive.google.com/file/d/1aNqargVf-AlBQwxWIi1BJ8lunTD36TZ_/view?usp=drive_link
 -I was really nervous and it was weird talking to myself in a video. I will definitely work to improve that. Please let me move forward though im stuck and cant go forward in sprint 4. 
 
 ## Deployment

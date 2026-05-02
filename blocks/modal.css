@@ -1,0 +1,102 @@
+/* add fonts */
+
+.modal {
+    visibility: hidden;
+    background-color: #00000080;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_is-opened {
+    visibility: visible;
+}
+
+.modal__container {
+   max-width: 730px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 32px 50px;
+    position: relative;
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 32px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+}
+
+.modal__title {
+    margin: 0 0 32px;
+    width: 169px;
+    height: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__label {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    color: #212121B2;
+    margin: 0 0 30px;
+}
+
+.modal__input {
+    border: 1px solid #21212166;
+    border-radius: 8px;
+    outline: none;
+    padding: 16px 12px;
+    margin: 8px 0 0;
+    width: 100%;
+    height: 52px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #212121;
+    background: transparent;
+}
+
+.modal__input::placeholder {
+    color: #21212166;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.modal__submit-btn {
+    width: 156px;
+    padding: 18px 32px;
+    background-color: #212121;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    box-sizing: border-box;
+    gap: 8px;
+}
+
