@@ -80,7 +80,6 @@
   line-height: 1.1;
   letter-spacing: 0;
   color: #212121b2;
-  margin: 0 0 30px;
 }
 
 .modal__input {
@@ -128,6 +127,10 @@
 @media (max-width: 480px) {
   .modal__container {
     padding: 22px 12px 12px;
+  }
+
+  .modal__submit-btn {
+    width: 100%;
   }
 
   .modal__close-btn {

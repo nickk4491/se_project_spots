@@ -55,6 +55,7 @@ function handleNewPostSubmit(evt) {
   console.log(newPostCardCaptionInput.value);
   console.log(newPostCardImageInput.value);
   closeModal(newPostModal);
+  newPostForm.reset();
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
