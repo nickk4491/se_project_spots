@@ -184,7 +184,9 @@
     font-size: 20px;
   }
 
-  @media screen and(max-width: 627px) {
+}
+
+@media screen and (max-width: 627px) {
   .modal__image {
     max-width: unset;
   }
