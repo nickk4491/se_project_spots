@@ -10,21 +10,31 @@
   display: block;
   border-radius: 8px;
   margin-bottom: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.card__image:hover {
+  opacity: 0.85;
+}
+
+.card__image:focus-visible {
+  outline: 2px solid #2f71e5;
+  outline-offset: 2px;
 }
 
 .card__like-button {
-  background-image: url(../images/Union.svg);
+  background: transparent url(../images/Union.svg) center / contain no-repeat;
   width: 23px;
   height: 20px;
   border: none;
   padding: 0;
   margin: 0;
-  background-color: transparent;
   opacity: 0.4;
 }
 
 .card__like-button_active {
-  background-image: url(../images/Redlikebtn.svg);
+  background: transparent url(../images/Redlikebtn.svg) center / contain no-repeat;
 }
 
 .card__like-button:hover {

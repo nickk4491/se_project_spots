@@ -36,75 +36,14 @@
         <section class="cards page__section">
           <ul class="cards__list">
             <template id="card-template">
-            <li class="card">
-              <button class="card__delete-button" type="button"></button>
-              <img
-                src="/"
-                alt="/"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title"></h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="/"
-                alt="/"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title"></h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="/"
-                alt="/"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title"></h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="/"
-                alt="/"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">
-                  
-                </h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="/"
-                alt="/"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title"></h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="/"
-                alt="/"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title"></h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
+              <li class="card">
+                <button class="card__delete-button" type="button"></button>
+                <img src="#" alt="" class="card__image" />
+                <div class="card__content">
+                  <h2 class="card__title"></h2>
+                  <button type="button" class="card__like-button"></button>
+                </div>
+              </li>
             </template>
           </ul>
         </section>
@@ -119,46 +58,50 @@
           <form class="modal__form">
             <label for="profile-name-input" class="modal__label">
               Name
-              <input 
+              <input
               id="profile-name-input"
-              type="text" 
+              type="text"
               class="modal__input"
               placeholder="Type your name"
+              required
               />
             </label>
             <label for="profile-description-input" class="modal__label">
               Description
-              <input 
-              id="profile-description-input" 
+              <input
+              id="profile-description-input"
               class="modal__input"
               placeholder="Describe yourself"
+              required
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>
       </div>
-      <div class="modal" id="new-post-modal">
+      <div class="modal modal_type_preview" id="new-post-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">New Post</h2>
           <form class="modal__form">
             <label for="card-image-input" class="modal__label">
               Image link
-              <input 
-              id="card-image-input" 
-              type="url" 
+              <input
+              id="card-image-input"
+              type="url"
               class="modal__input"
               placeholder="Place a link to the picture"
+              required
               />
             </label>
             <label for="card-caption-input" class="modal__label">
               Caption
-              <input 
-              id="card-caption-input" 
-              type="text" 
+              <input
+              id="card-caption-input"
+              type="text"
               class="modal__input"
               placeholder="Type your caption"
+              required
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -167,11 +110,11 @@
       </div>
 
 
-      <div class="modal" id="preview-modal">
+      <div class="modal modal_type_preview" id="preview-modal">
         <div class="modal__image-container">
           <button type="button" class="modal__close-btn modal__close-btn_type_preview"></button>
-          <img src="https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg" alt="GGB" class="modal__image">
-          <p class="modal__caption">Golden Gate Bridge</p>
+          <img src="" alt="" class="modal__image">
+          <p class="modal__caption"></p>
         </div>
       </div>
 

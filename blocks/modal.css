@@ -116,7 +116,6 @@
   font-weight: 400;
   cursor: pointer;
   box-sizing: border-box;
-  gap: 8px;
   transition: background-color 0.2s;
 }
 
@@ -182,6 +181,11 @@
 
   .modal__title {
     font-size: 20px;
+  }
+
+  .modal__caption {
+    font-size: 16px;
+    line-height: 1.2;
   }
 
 }
