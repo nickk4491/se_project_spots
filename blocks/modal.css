@@ -152,17 +152,17 @@
 }
 
 .modal__caption {
-  color: #fff;
-  background-color: #000000b2;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0;
   margin: 0;
-  padding: 8px 12px;
-  width: 100%;
-  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  position: absolute;
+  padding: 4px 8px;
+  background-color: #212121;
+  border-radius: 8px;
+  left: 0;
+  top: calc(100% + 10px);
 }
 
 @media (max-width: 480px) {
@@ -180,7 +180,6 @@
   }
 
   .modal__input {
-    margin-bottom: 24px;
     font-size: 16px;
   }
 
