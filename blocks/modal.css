@@ -106,6 +106,17 @@
   letter-spacing: 0;
 }
 
+.modal__error {
+  display: block;
+  font-size: 12px;
+  color: #ff0000;
+  margin-top: 4px;
+}
+
+.modal__error_visible {
+  display: block;
+}
+
 .modal__submit-btn {
   width: 156px;
   padding: 18px 32px;

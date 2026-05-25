@@ -63,17 +63,24 @@
               type="text"
               class="modal__input"
               placeholder="Type your name"
+              minlength="2"
+              maxlength="40"
               required
               />
+              <span class="modal__error" id="profile-name-input-error">Please use at least 2 characters (you are currently using 1 characters).</span>
             </label>
             <label for="profile-description-input" class="modal__label">
               Description
               <input
               id="profile-description-input"
+              type="text"
               class="modal__input"
               placeholder="Describe yourself"
+              minlength="2"
+              maxlength="200"
               required
               />
+              <span class="modal__error" id="profile-description-input-error"></span>
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
@@ -93,6 +100,7 @@
               placeholder="Place a link to the picture"
               required
               />
+              <span class="modal__error" id="card-image-input-error"></span>
             </label>
             <label for="card-caption-input" class="modal__label">
               Caption
@@ -101,8 +109,11 @@
               type="text"
               class="modal__input"
               placeholder="Type your caption"
+              minlength="2"
+              maxlength="30"
               required
               />
+              <span class="modal__error" id="card-caption-input-error"></span>
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
@@ -119,6 +130,7 @@
       </div>
 
     </div>
+    <script src="scripts/validation.js"></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>
