@@ -97,6 +97,10 @@
   background: transparent;
 }
 
+.modal__input_type_error {
+  border-color: #ff0000;
+}
+
 .modal__input::placeholder {
   color: #21212166;
   font-family: 'Poppins', sans-serif;
@@ -107,7 +111,7 @@
 }
 
 .modal__error {
-  display: block;
+  display: none;
   font-size: 12px;
   color: #ff0000;
   margin-top: 4px;
@@ -133,6 +137,12 @@
 
 .modal__submit-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal__submit-btn_disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .modal__image-container {
