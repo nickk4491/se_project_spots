@@ -14,14 +14,6 @@
   transition: opacity 0.2s;
 }
 
-.card__image:hover {
-  opacity: 0.85;
-}
-
-.card__image:focus-visible {
-  outline: 2px solid #2f71e5;
-  outline-offset: 2px;
-}
 
 .card__like-button {
   background: transparent url(../images/Union.svg) center / contain no-repeat;
@@ -52,6 +44,7 @@
   right: 10px;
   width: 32px;
   height: 32px;
+  z-index: 1;
   background: transparent url(../images/DeleteBTN.svg) center / 32px 32px no-repeat;
   border: none;
   padding: 0;
