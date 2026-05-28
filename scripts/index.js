@@ -109,6 +109,7 @@ document.querySelectorAll(".modal").forEach((modal) => {
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
+  resetValidation(editProfileForm, validationConfig);
   openModal(editProfileModal);
 });
 

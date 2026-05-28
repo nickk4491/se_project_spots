@@ -168,7 +168,7 @@
   height: 40px;
   top: -48px;
   right: 0;
-  background-image: url('../images/white-close-btn.svg');
+  background: transparent url('../images/white-close-btn.svg') center / 35px 35px no-repeat;
 }
 
 .modal__caption {
