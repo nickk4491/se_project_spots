@@ -983,38 +983,83 @@ template {
   color: rgba(33,33,33,0.69804);
 }
 
+.modal__container_type_delete {
+  max-width: 630px;
+  padding: 32px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.modal__container_type_delete .modal__title {
+  margin: 0;
+  text-align: center;
+}
+
+.modal__container_type_delete .modal__close-btn {
+  top: 0;
+  right: -52px;
+  opacity: 1;
+  background-image: url(8fd62550d2f8a12ff952.svg);
+}
+
 .modal__form_type_delete {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
 }
 
 .modal__submit-btn_type_delete {
-  width: 100%;
   background-color: #ff5c5c;
   color: #212121;
-  margin: 0 0 16px;
+  margin: 0;
 }
 
 .modal__submit-btn_type_delete:hover {
-  background-color: #ff5c5c;
-  opacity: 0.85;
+  background-color: #e64545;
 }
 
 .modal__cancel-btn {
-  border: none;
+  width: 156px;
+  padding: 18px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  border: 1px solid #212121;
+  border-radius: 8px;
   background: transparent;
-  padding: 0;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1;
   color: #212121;
   cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .modal__cancel-btn:hover {
-  opacity: 0.6;
+  background-color: rgba(33, 33, 33, 0.08);
 }
 
 .modal__image-container {
