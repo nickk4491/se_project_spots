@@ -435,15 +435,6 @@ template {
   padding: 0;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -458,9 +449,30 @@ template {
   outline: none;
 }
 
+.profile__avatar-label {
+  position: absolute;
+  left: 39px;
+  bottom: 12px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  border-radius: 90px;
+}
+
 .profile__avatar-icon {
-  width: 28px;
-  height: 28px;
+  width: 16px;
+  height: 16px;
+  /* group-2.svg is dark by default; render it white */
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
@@ -573,9 +585,12 @@ template {
   .profile__avatar-btn {
     opacity: 1;
   }
-  .profile__avatar-icon {
-    width: 16px;
-    height: 16px;
+  .profile__avatar-label {
+    left: 50%;
+    bottom: 8px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 12px;
   }
   .profile__add-btn {
     margin: 0;
