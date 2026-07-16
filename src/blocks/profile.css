@@ -6,11 +6,66 @@
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 
-.profile__avatar {
+.profile__avatar-container {
+  position: relative;
   margin-right: 20px;
   height: 190px;
   width: 190px;
   border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile__avatar {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.profile__avatar-btn {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.profile__avatar-container:hover .profile__avatar-btn {
+  opacity: 1;
+}
+
+.profile__avatar-btn:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+
+.profile__avatar-label {
+  position: absolute;
+  left: 39px;
+  bottom: 12px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  border-radius: 90px;
+}
+
+.profile__avatar-icon {
+  width: 16px;
+  height: 16px;
+  /* group-2.svg is dark by default; render it white */
+  filter: brightness(0) invert(1);
 }
 
 .profile__column {
@@ -92,11 +147,19 @@
     text-align: center;
     padding-top: 20px;
   }
-  .profile__avatar {
-    margin-right: 0;
+  .profile__avatar-container {
     height: 80px;
     width: 80px;
     margin: 0 0 12px;
+  }
+  .profile__avatar-btn {
+    opacity: 1;
+  }
+  .profile__avatar-label {
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+    font-size: 12px;
   }
   .profile__add-btn {
     margin: 0;

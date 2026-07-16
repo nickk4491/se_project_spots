@@ -143,6 +143,47 @@
   pointer-events: none;
 }
 
+.modal__subtitle {
+  margin: 0 0 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #212121b2;
+}
+
+.modal__form_type_delete {
+  align-items: center;
+}
+
+.modal__submit-btn_type_delete {
+  width: 100%;
+  background-color: #ff5c5c;
+  color: #212121;
+  margin: 0 0 16px;
+}
+
+.modal__submit-btn_type_delete:hover {
+  background-color: #ff5c5c;
+  opacity: 0.85;
+}
+
+.modal__cancel-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: #212121;
+  cursor: pointer;
+}
+
+.modal__cancel-btn:hover {
+  opacity: 0.6;
+}
+
 .modal__image-container {
   display: flex;
   flex-direction: column;

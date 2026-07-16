@@ -15,11 +15,27 @@
       </header>
       <main class="content">
         <section class="profile page__section">
-          <img
-            src="<%=require('./images/avatar.jpg')%>"
-            alt="Bessie Coleman"
-            class="profile__avatar"
-          />
+          <div class="profile__avatar-container">
+            <img
+              src="<%=require('./images/avatar.jpg')%>"
+              alt="Bessie Coleman"
+              class="profile__avatar"
+            />
+            <button
+              type="button"
+              class="profile__avatar-btn"
+              aria-label="Edit profile picture"
+            >
+              <span class="profile__avatar-label">
+                <img
+                  src="<%=require('./images/group-2.svg')%>"
+                  alt=""
+                  class="profile__avatar-icon"
+                />
+                Edit Avatar
+              </span>
+            </button>
+          </div>
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
@@ -49,6 +65,26 @@
       <footer class="footer page__section">
         <p class="footer__copyright">2026 © Spots</p>
       </footer>
+      <div class="modal" id="edit-avatar-modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">Change profile picture</h2>
+          <form class="modal__form">
+            <label for="avatar-link-input" class="modal__label">
+              Profile image link
+              <input
+                id="avatar-link-input"
+                type="url"
+                class="modal__input"
+                placeholder="Paste a link to the picture"
+                required
+              />
+              <span class="modal__error" id="avatar-link-input-error"></span>
+            </label>
+            <button type="submit" class="modal__submit-btn">Save</button>
+          </form>
+        </div>
+      </div>
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
@@ -118,6 +154,20 @@
         </div>
       </div>
 
+
+      <div class="modal" id="delete-modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">Are you sure?</h2>
+          <p class="modal__subtitle">This action is irreversible.</p>
+          <form class="modal__form modal__form_type_delete" name="delete-form">
+            <button type="submit" class="modal__submit-btn modal__submit-btn_type_delete">
+              Delete
+            </button>
+            <button type="button" class="modal__cancel-btn">Cancel</button>
+          </form>
+        </div>
+      </div>
 
       <div class="modal modal_type_preview" id="preview-modal">
         <div class="modal__image-container">
